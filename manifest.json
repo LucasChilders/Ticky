@@ -7,10 +7,14 @@
       "matches": [
         "https://*/*", "file://*/*"
       ],
-      "js": ["src/jquery-3.1.1.min.js", "src/content.js"]
+      "js": ["src/jquery-3.1.1.min.js", "src/background.js"]
     }
-],
-  "browser_action": {
-      "default_icon": "icon.png"
-  }
+    ],
+    "background": {
+        "page": "src/popup.html"
+    },
+    "browser_action": {
+      "default_icon": "img/icon.png",
+      "default_popup": "src/popup.html"
+    }
 }
