@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Ticky",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*", "file://*/*"
+      ],
+      "js": ["src/jquery-3.1.1.min.js", "src/content.js"]
+    }
+],
+  "browser_action": {
+      "default_icon": "icon.png"
+  }
+}
