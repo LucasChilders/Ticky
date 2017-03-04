@@ -1,4 +1,4 @@
-console.log("Ticky Running! v0.1.0");
+console.log("Ticky Running! v0.2.0");
 
 var uniqueTickers = [];
 var tReg = /(^\$[A-z]{1,5}$)/g;

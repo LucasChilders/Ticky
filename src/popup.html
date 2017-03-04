@@ -7,16 +7,34 @@
                 height: auto;
                 font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
                 font-size: 100%;
+                margin: 0 auto;
             }
             #title {
                 text-overflow: ellipsis;
                 text-align: center;
+                background-color: #D6EAF8;
+                padding-top: .5em;
+                padding-bottom: .5em;
             }
             table {
                 width: 100%;
             }
+            td {
+                vertical-align: center;
+            }
+            #symbol {
+                width: 60%;
+            }
             #price {
                 text-align: right;
+            }
+            #change {
+                font-size: 75%;
+                text-align: right;
+            }
+            #loading {
+                text-align: center;
+                font-size: 75%;
             }
 
         </style>
@@ -27,7 +45,7 @@
 
     <body>
         <div id="title">Ticky</div>
-        <br/>
+        <div id="loading">loading..</div>
         <table>
             <tbody>
             </tbody>
