@@ -2,17 +2,17 @@
   "manifest_version": 2,
   "name": "Ticky",
   "version": "0.1.0",
+  "permissions": [
+      "tabs", "activeTab", "storage", "https://*/*", "file://*/*"
+  ],
   "content_scripts": [
     {
       "matches": [
         "https://*/*", "file://*/*"
       ],
-      "js": ["src/jquery-3.1.1.min.js", "src/background.js"]
+      "js": ["src/jquery-3.1.1.min.js", "src/content.js"]
     }
     ],
-    "background": {
-        "page": "src/popup.html"
-    },
     "browser_action": {
       "default_icon": "img/icon.png",
       "default_popup": "src/popup.html"
